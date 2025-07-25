@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter;
   background-color: #f5f7fb;
   margin: 0;
   color: #252432;
@@ -166,4 +166,58 @@ body {
 
 .add-btn:hover {
   background-color: #e04b00;
+}
+
+/* plant lover section */
+.plant-lover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f5f7fb;
+  padding: 80px;
+}
+.plant-lover-img {
+  width: 400px;
+  position: relative;
+}
+
+.plant-lover-img img:first-child {
+  width: 400px;
+  border-radius: 8px;
+}
+.trusted-badge {
+  width: 150px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  animation: spin 9s linear infinite;
+}
+
+/* animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.plant-lover-text {
+  width: 58%;
+}
+
+.plant-lover-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Noto Serif;
+}
+
+.plant-lover-text ul {
+  padding-left: 0px;
+  list-style-position: inside; 
+}
+
+.plant-lover-text ul li {
+  margin-bottom: 20px; 
+  line-height: 1;
+  font-size: 20px;
+  color: #444;
 }
